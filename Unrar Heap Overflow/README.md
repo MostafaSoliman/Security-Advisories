@@ -42,6 +42,7 @@ So the first thing to inspect was the application heap.
 ![Alt text](images/3.PNG?raw=true)
 
 Then let's inspect the heap starts at ```0x00600000```
+
 ![Alt text](images/4.PNG?raw=true)
 ![Alt text](images/5.PNG?raw=true)
 ![Alt text](images/6.PNG?raw=true)
