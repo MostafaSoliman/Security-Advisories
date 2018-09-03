@@ -45,10 +45,10 @@ Then let's inspect the heap starts at ```0x00600000```
 
 ![Alt text](images/4.PNG?raw=true)
 ![Alt text](images/5.PNG?raw=true)
-![Alt text](images/6.PNG?raw=true)
+  ![Alt text](images/6.PNG?raw=true)
 
 As seen from the last figure the last heap segment (Free Fill) seems to be corrupted, it says that its ```prevSize``` is ```1ed48``` while it should be ```0a600```.
-So let's inspect this segment. As shown it has been written over by the value ```005c``` which is the wide char of the ASCII char ```/```, this is the payload in the file that trigger the crash.
+So let's inspect this segment. As shown it has been written over by the value ```005c``` which is the wide char of the ASCII char ```\```, this is the payload in the file that trigger the crash.
 ![Alt text](images/7.PNG?raw=true)
 
 So lets cast this free segment to ```_HEAP_ENTRY```, to see how the overflow data will be interpreted by the heap manager.
