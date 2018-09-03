@@ -54,6 +54,9 @@ So let's inspect this segment. As shown it has been written over by the value ``
 So lets cast this free segment to ```_HEAP_ENTRY```, to see how the overflow data will be interpreted by the heap manager.
 ![Alt text](images/8.PNG?raw=true)
 
+Final
+-------
+The issue was reported to MITRE to assign a CVE, the responded that vulnerabilities that require payload to be delivered via config files are out of scope.
 
 Refrences
 ----------
