@@ -17,7 +17,8 @@ The payload
  var ast = parse(src).body[0].expression; 
  console.log(evaluate(ast))
 ```
-[IMAGE]
+![Alt text](run.PNG?raw=true)
+
 Restriction - 1
 --------------
 ```
