@@ -88,4 +88,4 @@ root@kali:~/Desktop/eval# nodejs safe.js "1;var stack = [];function trace(contex
 ```
 This payload will return the constructor of the function “x.v”, in order to gain access to the process object and gain RCE we can do something like this.
 
-[IMG]
+![Alt text](run.png?raw=true)
